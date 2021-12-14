@@ -40,7 +40,7 @@ void AWeapon::OnConstruction(const FTransform& Transform)
 {
 	Super::OnConstruction(Transform);
 	
-	const FString weaponTablePath{TEXT("DataTable'/Game/DataTable/WeaponDataTable.WeaponDataTable'")};
+	const FString weaponTablePath{TEXT("DataTable'/Game/_Game/Weapons/DataTables/WeaponDataTable.WeaponDataTable'")};
 	UDataTable* weaponTableObject = Cast<UDataTable>(StaticLoadObject(UDataTable::StaticClass(),nullptr,*weaponTablePath));
 
 	if (weaponTableObject)
